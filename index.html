@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 2rem;
+        }
+
+        .product {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            padding: 1rem;
+            width: calc(33.333% - 2rem);
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        .product p {
+            margin: 1rem 0;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+        }
+
+        form label {
+            margin: 1rem 0;
+        }
+
+        form input[type="text"],
+        form input[type="email"] {
+            padding: 0.5rem;
+            width: 100%;
+        }
+
+        form button {
+            background-color: #000000;
+            border: none;
+            color: #ffffff;
+            padding: 0.5rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Contact Us</a>
+    </header>
+    <main>
+        <div class="product">
+            <img src="https://www.apple.com/newsroom/images/product/iphone/standard/apple_new-iphone-13-pro-hero_09012021_big.jpg.large.jpg" alt="iPhone">
+            <h2>iPhone</h2>
+            <p>iPhone is a line of smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system.</p>
+        </div>
+        <div class="product">
+            <img src="https://www.apple.com/newsroom/images/product/mac/standard/apple_new-imac-24-hero_04052021_big.jpg.large.jpg" alt="iMac">
+            <h2>iMac</h2>
+            <p>The iMac is a family of all-in-one Macintosh desktop computers designed and built by Apple Inc.</p>
+        </div>
+        <div class="product">
+            <img src="https://www.apple.com/newsroom/images/product/ipad/standard/apple_new-ipad-pro-hero_04202021_big.jpg.large.jpg" alt="iPad Pro">
+            <h2>iPad Pro</h2>
+            <p>The iPad Pro is a line of tablet computers designed, developed and marketed by Apple Inc.</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2022 Apple Inc.</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+</body>
+</html>
